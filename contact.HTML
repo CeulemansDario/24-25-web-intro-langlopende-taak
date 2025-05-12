@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Formulier</title>
-    <link rel="stylesheet" href="styles.css"> <
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     <input type="submit" value="Verzenden">
 
 <h3>contactgegevens</h3>   
-    <label for="address">Computerdreef 1010</label><br>
+    <label for="address">Pierrelaan 1010</label><br>
     <label for="address">Brecht, België</label><br>
     <label for="address">mulanandmuchi@gmail.com</label><br>
     <label for="address">GSM: +32 465 000 00</label><br>
@@ -31,38 +31,29 @@
 
 </body>
 </html>
-<head>
-    <img src="C:\Users\ceule\Downloads\Home - Banner - JouwWeb_files\img_20240323_102517.jpg"alt="logo" width="1000" height="800">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logo als achtergrond</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url(C:\Users\ceule\Downloads\Home - Banner - JouwWeb_files\img_20240323_102517.jpg); 
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        .content {
-            padding: 20px;
-            background-color: rgba(251, 135, 4, 0.8); 
-            margin: 50px auto;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h1></h1>
-    </div>
-</body>
+<!DOCTYPE html>
+<html lang="nl-BE">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=5.0">
+      <title>Hoofdgebouw Check Security</title>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <div id="map" style="width: 100%; height: 500px;"></div>
+    
+        <script>
+            var map = L.map('map').setView([51.32101, 4.58658], 15); 
+        
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+        
+            var marker = L.marker([51.32101, 4.58658]).addTo(map);
+            marker.bindPopup("<b>Hier is de locatie!</b><br>Hoofdgebouw Check Security.").openPopup();
+        </script>
+    </body>
 </html>
